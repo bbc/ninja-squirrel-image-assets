@@ -29,7 +29,7 @@ jQuery(() => {
 
       // Replace image with new SVG
       $img.replaceWith($svg)
-
+      document.dispatchEvent(new CustomEvent('imgReplacedWithSvg', { detail: { $svg, $img } }))
     }, 'xml')
   })
 })
