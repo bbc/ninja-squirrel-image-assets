@@ -1,15 +1,17 @@
 document.addEventListener('imgReplacedWithSvg', analyzeSVG)
 
 function analyzeSVG(ev) {
-  $svg = ev.detail.$svg
-  console.log('Found SVG', $svg[0], 'to analyze')
+  const svg = ev.detail.$svg[0]
+  console.log('Found SVG', svg, 'to analyze')
 
-  $layers = $(`g[inkscape\\:groupmode='layer']`)
-  console.log('Found layers', $layers)
+  const layers = Array.from(svg.querySelectorAll('g')).filter(g => g.getAttribute('inkscape:groupmode') === 'layer')
+  console.log('Found layers', layers)
 
-  const layers = $.map($layers, (layer) => {
-    console.log(layer, '?')
-    return $(layer).attr('inkscape:label')
+  const layerNames = layers.map((layer) => {
+    console.log('woot', layer)
+    console.log(layer)
+    return layer.getAttribute('inkscape:label')
   })
-  console.log('Found layers names', layers)
+
+  console.log('Found layers names', layerNames)
 }
