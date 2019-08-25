@@ -1,0 +1,25 @@
+{
+  "name": "ninja-squirel-image-assets",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bbc/ninja-squirel-image-assets.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/bbc/ninja-squirel-image-assets/issues"
+  },
+  "homepage": "https://github.com/bbc/ninja-squirel-image-assets#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "open": "^6.4.0"
+  }
+}
