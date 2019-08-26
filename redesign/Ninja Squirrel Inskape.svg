@@ -28,11 +28,11 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.78431373"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.92884439"
-     inkscape:cx="710.71811"
-     inkscape:cy="736.37108"
+     inkscape:zoom="0.5"
+     inkscape:cx="291.86057"
+     inkscape:cy="678.07488"
      inkscape:document-units="pt"
-     inkscape:current-layer="layer6"
+     inkscape:current-layer="layer18"
      showgrid="false"
      units="pt"
      inkscape:pagecheckerboard="true"
@@ -787,7 +787,7 @@
     <g
        inkscape:groupmode="layer"
        id="layer18"
-       inkscape:label="Main Hand">
+       inkscape:label="Right Hand">
       <g
          inkscape:groupmode="layer"
          id="layer19"
@@ -867,7 +867,8 @@
     <g
        inkscape:groupmode="layer"
        id="layer11"
-       inkscape:label="Off Hand">
+       inkscape:label="Left Hand"
+       style="display:inline">
       <g
          inkscape:groupmode="layer"
          id="layer2"
@@ -1065,6 +1066,31 @@
        id="layer17"
        inkscape:label="Head Gear"
        style="display:inline">
+      <g
+         inkscape:groupmode="layer"
+         id="layer20"
+         inkscape:label="Zorro Mask"
+         style="display:none">
+        <path
+           style="fill:#434248;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           d="m 113.22873,166.69041 0.71213,11.10924 c 0,0 14.45627,9.55605 21.22149,8.97284 8.26072,-0.71213 12.39031,-6.85079 14.95473,-6.97887 2.8515,-0.14243 9.67927,8.22713 16.80628,6.12432 10.63383,-3.1375 18.08111,-12.72252 29.62463,-15.52445 l 0.42728,-9.54255 c -30.3141,10.82981 -58.50676,14.6232 -83.74654,5.83947 z"
+           id="zorromask-material-1"
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="ccsssccc"
+           inkscape:label="#path245" />
+        <path
+           style="display:inline;fill:#434248;fill-opacity:1;stroke:#000000;stroke-width:5.29166651;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke markers fill"
+           d="m 200.12946,160.28124 13.67291,-15.23959 4.41521,12.39107 -17.94569,7.1213 z"
+           id="zorromask-material-3"
+           inkscape:connector-curvature="0"
+           inkscape:label="#path1053" />
+        <path
+           style="display:inline;fill:#434248;fill-opacity:1;stroke:#000000;stroke-width:5.29166651;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke markers fill"
+           d="m 199.41733,165.40858 0.14243,5.12734 21.36391,-3.2758 -0.71213,-13.81533 z"
+           id="zorromask-material-2"
+           inkscape:connector-curvature="0"
+           inkscape:label="#path1055" />
+      </g>
       <g
          style="display:inline"
          inkscape:label="Head Mask"

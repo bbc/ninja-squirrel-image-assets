@@ -18,8 +18,11 @@ function mapControllerButtons(svg) {
   const backgroundPaths = ['backgroundcircle']
     .map(id => svg.getElementById(id)).filter(n => n)
 
-  const materialPaths = ['headmaterial-mask', 'headmaterial-batmask', 'headmaterial-beanie', 'bodymaterial', 'leftarmmaterial', 'rightarmmaterial']
-    .map(id => svg.getElementById(id)).filter(n => n)
+  const materialPaths = [
+    'headmaterial-mask', 'headmaterial-batmask', 'headmaterial-beanie',
+    'bodymaterial', 'leftarmmaterial', 'rightarmmaterial',
+    'zorromask-material-1', 'zorromask-material-2', 'zorromask-material-3'
+  ].map(id => svg.getElementById(id)).filter(n => n)
 
   const controllerButtons = ['controllerbutton1', 'controllerbutton2', 'controllerbutton3', 'controllerbutton4', 'controllerbutton5', 'controllerbutton6', 'controllerbutton7', 'controllerbutton8', 'controllerbutton9', 'controllerbutton10']
     .map(id => svg.getElementById(id)).filter(n => n)
