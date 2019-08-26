@@ -32,7 +32,7 @@
      inkscape:cx="373.07364"
      inkscape:cy="697.2811"
      inkscape:document-units="pt"
-     inkscape:current-layer="layer4"
+     inkscape:current-layer="g1496"
      showgrid="false"
      units="pt"
      inkscape:pagecheckerboard="true"
@@ -566,7 +566,7 @@
        style="display:none"
        inkscape:groupmode="layer"
        id="g1496"
-       inkscape:label="Two Tails">
+       inkscape:label="Twin Tails">
       <g
          style="display:inline"
          id="g5115-2-6"
@@ -620,7 +620,7 @@
        inkscape:label="Tail Down"
        id="g999"
        inkscape:groupmode="layer"
-       style="display:inline">
+       style="display:none">
       <g
          transform="matrix(0.43395486,-0.82750334,-0.84938683,-0.44578314,288.98777,468.45362)"
          id="g997"
