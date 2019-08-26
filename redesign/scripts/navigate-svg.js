@@ -55,6 +55,7 @@ function createLayerGroupForLayer(layer) {
     .filter(child => findDirectChildrenForLayer(child).length > 0)
 
   childLayersWithChildren
+    .reverse()
     .map(createLayerGroupForLayer)
     .forEach(childLayerGroup => layerGroup.appendChild(childLayerGroup))
 
