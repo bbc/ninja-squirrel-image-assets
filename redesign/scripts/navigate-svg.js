@@ -25,5 +25,19 @@ function analyzeSVG(ev) {
     })
   })
 
+  const materialPaths = ['headmaterial', 'bodymaterial', 'leftarmmaterial', 'rightarmmaterial', 'backgroundcircle']
+    .map(id => svg.getElementById(id)).filter(n => n)
+
+  const buttons = ['controllerbutton1', 'controllerbutton2', 'controllerbutton3', 'controllerbutton4', 'controllerbutton5', 'controllerbutton6', 'controllerbutton7', 'controllerbutton8', 'controllerbutton9', 'controllerbutton10']
+    .map(id => svg.getElementById(id)).filter(n => n)
+
+  buttons.forEach(button => {
+    button.addEventListener('mousedown', (ev) => {
+      materialPaths.forEach(path => {
+        path.style.fill = button.style.fill
+      })
+    })
+  })
+
   insertAfter(buttonContainer, svg)
 }
