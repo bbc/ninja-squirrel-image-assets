@@ -25,17 +25,27 @@ function analyzeSVG(ev) {
     })
   })
 
-  const materialPaths = ['headmaterial', 'bodymaterial', 'leftarmmaterial', 'rightarmmaterial', 'backgroundcircle']
+  const backgroundPaths = ['backgroundcircle']
+    .map(id => svg.getElementById(id)).filter(n => n)
+
+  const materialPaths = ['headmaterial', 'bodymaterial', 'leftarmmaterial', 'rightarmmaterial']
     .map(id => svg.getElementById(id)).filter(n => n)
 
   const buttons = ['controllerbutton1', 'controllerbutton2', 'controllerbutton3', 'controllerbutton4', 'controllerbutton5', 'controllerbutton6', 'controllerbutton7', 'controllerbutton8', 'controllerbutton9', 'controllerbutton10']
     .map(id => svg.getElementById(id)).filter(n => n)
 
+  let previousFill = ''
+
   buttons.forEach(button => {
     button.addEventListener('mousedown', (ev) => {
+      const newFill = button.style.fill
       materialPaths.forEach(path => {
-        path.style.fill = button.style.fill
+        path.style.fill = newFill
       })
+      backgroundPaths.forEach(path => {
+        path.style.fill = previousFill
+      })
+      previousFill = newFill
     })
   })
 
