@@ -24,7 +24,7 @@ function mapControllerButtons(svg) {
   const controllerButtons = ['controllerbutton1', 'controllerbutton2', 'controllerbutton3', 'controllerbutton4', 'controllerbutton5', 'controllerbutton6', 'controllerbutton7', 'controllerbutton8', 'controllerbutton9', 'controllerbutton10']
     .map(id => svg.getElementById(id)).filter(n => n)
 
-  let previousFill = ''
+  let previousFill = false
 
   controllerButtons.forEach(button => {
     button.addEventListener('mousedown', (ev) => {
@@ -33,7 +33,7 @@ function mapControllerButtons(svg) {
         path.style.fill = newFill
       })
       backgroundPaths.forEach(path => {
-        path.style.fill = previousFill
+        path.style.fill = previousFill || newFill
       })
       previousFill = newFill
     })
