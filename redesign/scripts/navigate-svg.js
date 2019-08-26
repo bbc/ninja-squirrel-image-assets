@@ -18,7 +18,7 @@ function mapControllerButtons(svg) {
   const backgroundPaths = ['backgroundcircle']
     .map(id => svg.getElementById(id)).filter(n => n)
 
-  const materialPaths = ['headmaterial', 'bodymaterial', 'leftarmmaterial', 'rightarmmaterial']
+  const materialPaths = ['headmaterial-mask', 'headmaterial-batmask', 'headmaterial-beanie', 'bodymaterial', 'leftarmmaterial', 'rightarmmaterial']
     .map(id => svg.getElementById(id)).filter(n => n)
 
   const controllerButtons = ['controllerbutton1', 'controllerbutton2', 'controllerbutton3', 'controllerbutton4', 'controllerbutton5', 'controllerbutton6', 'controllerbutton7', 'controllerbutton8', 'controllerbutton9', 'controllerbutton10']
@@ -68,9 +68,14 @@ function createLayerGroupForLayer(layer) {
     layerGroup.appendChild(optionGroup)
   }
 
-  button.addEventListener('click', (ev) => {
-    layer.style.display = layer.style.display === 'none' ?  'inline': 'none';
-  })
+  if (childLayersWithChildren.length + childLayersWithoutChildren.length === 0) {
+    button.addEventListener('click', (ev) => {
+      layer.style.display = layer.style.display === 'none' ?  'inline': 'none';
+    })
+  }
+  else {
+    button.disabled = true
+  }
 
   return layerGroup
 }
@@ -87,7 +92,7 @@ function createLayerOptionButton(parentLayer, layer) {
       siblings.forEach(sibling => {
         sibling.style.display = 'none'
       })
-      layer.style.display = layer.style.display === 'inline' ? 'none' : 'inline'
+      layer.style.display = 'inline'
     })
 
     return button
@@ -104,7 +109,9 @@ function analyzeSVG(ev) {
   buttonContainer.appendChild(buttonTitle)
 
   mapControllerButtons(svg)
-  Array.from(svg.querySelectorAll('svg > g')).filter(keepLayersOnly)
+  Array.from(svg.querySelectorAll('svg > g'))
+    .filter(keepLayersOnly)
+    .reverse()
     .map(createLayerGroupForLayer)
     .forEach(layerGroup => buttonContainer.appendChild(layerGroup))
   insertAfter(buttonContainer, svg)
