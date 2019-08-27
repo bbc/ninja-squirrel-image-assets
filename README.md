@@ -1,4 +1,4 @@
-# ninja-squirrel-image-assets
+# <img src="baked/Ninja-Squirrel-32x32.png" width="32" title="Ninja Squirrel x32" /> ninja-squirrel-image-assets
 
 Ninja Squirrels team; logos, and art assets - including interactive avatar designer.
 
