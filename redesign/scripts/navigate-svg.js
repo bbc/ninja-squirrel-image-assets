@@ -102,6 +102,20 @@ function createLayerOptionButton(parentLayer, layer) {
     return button
 }
 
+function makeSaveSVGFeature(svg) {
+  const layerGroup = document.createElement('div')
+  layerGroup.className = 'layer group'
+
+  const saveButton = document.createElement('button')
+  saveButton.innerText = 'Save SVG'
+  saveButton.addEventListener('click', (ev) => {
+    saveTextAs(svg.outerHTML, 'ninja-squirrel-custom.svg')
+  })
+
+  layerGroup.appendChild(saveButton)
+  return layerGroup
+}
+
 function analyzeSVG(ev) {
   const svg = ev.detail.svg
   console.log('Found SVG', svg, 'to analyze')
@@ -118,5 +132,8 @@ function analyzeSVG(ev) {
     .reverse()
     .map(createLayerGroupForLayer)
     .forEach(layerGroup => buttonContainer.appendChild(layerGroup))
+
+  buttonContainer.appendChild(makeSaveSVGFeature(svg))
+
   insertAfter(buttonContainer, svg)
 }
