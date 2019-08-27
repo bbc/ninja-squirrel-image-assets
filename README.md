@@ -1,4 +1,4 @@
-# ninja-squirel-image-assets
+# ninja-squirrel-image-assets
 
 Ninja Squirrels team; logos, and art assets - including interactive avatar designer.
 
@@ -6,7 +6,7 @@ Ninja Squirrels team; logos, and art assets - including interactive avatar desig
 
 To create your own variation of the Ninja Squirrels logo; based on our asset template; visit:
 
->https://bbc.github.io/ninja-squirel-image-assets/designer/
+>https://bbc.github.io/ninja-squirrel-image-assets/designer/
 
 ## Baked Assets
 
