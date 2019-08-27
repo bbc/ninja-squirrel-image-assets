@@ -1,10 +1,5 @@
-const express = require('express')
-const path = require('path')
 const open = require('open')
-const app = express()
-
-app.use('/designer', express.static(path.join(__dirname, 'designer')))
-app.use('/svg', express.static(path.join(__dirname, 'svg')))
+const app = require('./scripts/app')
 
 const port = 8900
 app.listen(port, async () => {
