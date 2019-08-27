@@ -42,3 +42,10 @@ This should open up a local development window running on:
 - http://localhost:8900/designer/
 
 This page will allow you to customise the avatar and save out your own version as a new SVG file. You should use local development mode in conjunction with Inkscape to update layers and add new art assets in a way that is compatible with the Avatar Designer.
+
+## Baked Assets
+
+You can automatically bake some of the assets from SVG to PNG by running:
+- `npm run build`
+
+This will spin up a bakery web server; render our the SVG at the specified resolution, and then close the bakery.

@@ -51,6 +51,8 @@ const killProcessAfter5Seconds = async () => {
 const screenshotRunner = async () => {
   await startServer()
   await renderImage({ width: 1280, height: 1280, isLandscape: true, uri: '/designer/render.html', file: 'Ninja-Squirrel.png' })
+  await renderImage({ width: 64, height: 64, isLandscape: true, uri: '/designer/render.html', file: 'Ninja-Squirrel-64x64.png' })
+  await renderImage({ width: 32, height: 32, isLandscape: true, uri: '/designer/render.html', file: 'Ninja-Squirrel-32x32.png' })
   await closeServer()
   killProcessAfter5Seconds()
 }
