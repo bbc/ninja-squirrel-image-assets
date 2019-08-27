@@ -15,7 +15,7 @@ function findDirectChildrenForLayer(layer) {
 }
 
 function mapControllerButtons(svg) {
-  const backgroundPaths = ['backgroundcircle']
+  const backgroundPaths = ['backgroundcircle', 'umbrella-material']
     .map(id => svg.getElementById(id)).filter(n => n)
 
   const materialPaths = [
