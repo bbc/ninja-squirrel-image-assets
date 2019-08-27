@@ -25,3 +25,20 @@ The point of truth; use if your target platform supports SVG - this file is smal
 <p align="center">
   <img src="svg/Ninja%20Squirrel%20Avatar.svg" width="40%" title="Ninja Squirrel Avatar" />
 </p>
+
+## Approved SVG Editor
+
+Please download and install Inkscape vector editor (available for free on Windows, Mac, Linux). Inkscape provides a high quality set of tools for creating and editing precise SVG files; without too much junk data.
+
+>https://inkscape.org/
+
+## Local Development
+
+For local development; clone this repo then run:
+- `npm install`
+- `npm start`
+
+This should open up a local development window running on:
+- http://localhost:8900/designer/
+
+This page will allow you to customise the avatar and save out your own version as a new SVG file. You should use local development mode in conjunction with Inkscape to update layers and add new art assets in a way that is compatible with the Avatar Designer.
