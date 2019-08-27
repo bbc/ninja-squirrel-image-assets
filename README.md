@@ -15,14 +15,14 @@ Using the assets; we have prebaked image assets to use in other projects. We rec
 ### Large Logos
 
 <p align="center">
-  <img src="baked/BBC-Ninja-Squirrels.png" width="40%" title="BBC Ninja Squirrel" />
-  <img src="baked/Ninja-Squirrel.png" width="40%" title="Ninja Squirrel" />
-  <img src="baked/Ninja-Squirrel-on-White.png" width="40%" title="Ninja Squirrel on White" />
+  <img src="baked/BBC-Ninja-Squirrels.png" width="30%" title="BBC Ninja Squirrel" />
+  <img src="baked/Ninja-Squirrel.png" width="30%" title="Ninja Squirrel" />
+  <img src="baked/Ninja-Squirrel-on-White.png" width="30%" title="Ninja Squirrel on White" />
 </p>
 
 ### Small Logos
 
-<p align="center">
+<p align="left">
   <img src="baked/Ninja-Squirrel-64x64.png" width="64" title="Ninja Squirrel x64" />
   <img src="baked/Ninja-Squirrel-32x32.png" width="32" title="Ninja Squirrel x32" />
 </p>
