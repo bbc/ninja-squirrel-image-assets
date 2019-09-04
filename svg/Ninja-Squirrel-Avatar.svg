@@ -15,7 +15,7 @@
    version="1.1"
    id="svg8"
    inkscape:version="0.92.2 5c3e80d, 2017-08-06"
-   sodipodi:docname="Ninja Squirrel Inskape.svg"
+   sodipodi:docname="Ninja-Squirrel-Avatar.svg"
    inkscape:export-filename="C:\Users\User\Ninja Squirrel Inskape.png"
    inkscape:export-xdpi="96"
    inkscape:export-ydpi="96">
@@ -29,10 +29,10 @@
      inkscape:pageopacity="0.78431373"
      inkscape:pageshadow="2"
      inkscape:zoom="1.0897856"
-     inkscape:cx="548.38724"
+     inkscape:cx="704.04479"
      inkscape:cy="731.16489"
      inkscape:document-units="pt"
-     inkscape:current-layer="layer6"
+     inkscape:current-layer="g1064"
      showgrid="false"
      units="pt"
      inkscape:pagecheckerboard="true"
@@ -52,7 +52,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -1130,8 +1130,7 @@
          style="display:inline"
          inkscape:label="Head Mask"
          id="g1064"
-         inkscape:groupmode="layer"
-         sodipodi:insensitive="true">
+         inkscape:groupmode="layer">
         <g
            style="display:inline"
            id="g1062"
