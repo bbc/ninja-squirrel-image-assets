@@ -45,7 +45,7 @@ const killProcessAfter5Seconds = async () => {
   setTimeout(() => {
     console.log('Kill process')
     process.exit(0)
-  }, 5000)
+  }, 1200)
 }
 
 const screenshotRunner = async () => {
@@ -53,6 +53,8 @@ const screenshotRunner = async () => {
   await renderImage({ width: 1280, height: 1280, isLandscape: true, uri: '/designer/render.html', file: 'Ninja-Squirrel.png' })
   await renderImage({ width: 64, height: 64, isLandscape: true, uri: '/designer/render.html', file: 'Ninja-Squirrel-64x64.png' })
   await renderImage({ width: 32, height: 32, isLandscape: true, uri: '/designer/render.html', file: 'Ninja-Squirrel-32x32.png' })
+  await renderImage({ width: 1280, height: 1280, isLandscape: true, uri: '/designer/render.html?svgFile=Ninja-Squirrel-on-White.svg', file: 'Ninja-Squirrel-on-White.png' })
+  await renderImage({ width: 1280, height: 1280, isLandscape: true, uri: '/designer/render.html?svgFile=BBC-Ninja-Squirrels.svg', file: 'BBC-Ninja-Squirrels.png' })
   await closeServer()
   killProcessAfter5Seconds()
 }

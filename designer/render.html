@@ -4,7 +4,18 @@
   <title>Ninja Squirrels - Asset Renderer</title>
 </head>
 <body>
-  <img src="../svg/Ninja-Squirrel-Avatar.svg" class="svg" />
+  <script>
+    const urlParams = new URLSearchParams(document.location.search)
+    const svgFile = urlParams.get('svgFile') || `Ninja-Squirrel-Avatar.svg`
+
+    const img = document.createElement('img')
+    img.className = 'svg'
+    img.src = `../svg/${svgFile}`
+
+    document.body.append(img)
+
+  </script>
+  <img src="" class="svg" />
   <style>
     html, body, * {
       margin: 0;
