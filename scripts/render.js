@@ -16,6 +16,16 @@ const startServer = () => {
   })
 }
 
+const renderSVG = async({ width, height, inputFile, outputFile}) => {
+  return renderImage({
+    width,
+    height,
+    isLandscape: true,
+    uri: `/designer/render.html?svgFile=${inputFile}`,
+    file: outputFile
+  })
+}
+
 const renderImage = async (viewport) => {
   const page = await openPage(viewport.uri)
   await page.setViewport(viewport)
@@ -50,11 +60,11 @@ const killProcessAfter5Seconds = async () => {
 
 const screenshotRunner = async () => {
   await startServer()
-  await renderImage({ width: 1280, height: 1280, isLandscape: true, uri: '/designer/render.html', file: 'Ninja-Squirrel.png' })
-  await renderImage({ width: 64, height: 64, isLandscape: true, uri: '/designer/render.html', file: 'Ninja-Squirrel-64x64.png' })
-  await renderImage({ width: 32, height: 32, isLandscape: true, uri: '/designer/render.html', file: 'Ninja-Squirrel-32x32.png' })
-  await renderImage({ width: 1280, height: 1280, isLandscape: true, uri: '/designer/render.html?svgFile=Ninja-Squirrel-on-White.svg', file: 'Ninja-Squirrel-on-White.png' })
-  await renderImage({ width: 1280, height: 1280, isLandscape: true, uri: '/designer/render.html?svgFile=BBC-Ninja-Squirrels.svg', file: 'BBC-Ninja-Squirrels.png' })
+  await renderSVG({ width: 1280, height: 1280, inputFile: 'Ninja-Squirrel-Avatar.svg', outputFile: 'Ninja-Squirrel.png' })
+  await renderSVG({ width: 64, height: 64, inputFile: 'Ninja-Squirrel-Avatar.svg', outputFile: 'Ninja-Squirrel-64x64.png' })
+  await renderSVG({ width: 32, height: 32, inputFile: 'Ninja-Squirrel-Avatar.svg', outputFile: 'Ninja-Squirrel-32x32.png' })
+  await renderSVG({ width: 1280, height: 1280, inputFile: 'Ninja-Squirrel-on-White.svg', outputFile: 'Ninja-Squirrel-on-White.png' })
+  await renderSVG({ width: 1280, height: 1280, inputFile: 'BBC-Ninja-Squirrels.svg', outputFile: 'BBC-Ninja-Squirrels.png' })
   await closeServer()
   killProcessAfter5Seconds()
 }
