@@ -29,10 +29,10 @@
      inkscape:pageopacity="0.78431373"
      inkscape:pageshadow="2"
      inkscape:zoom="1.0897856"
-     inkscape:cx="704.04479"
+     inkscape:cx="600.35467"
      inkscape:cy="731.16489"
      inkscape:document-units="pt"
-     inkscape:current-layer="g1064"
+     inkscape:current-layer="svg8"
      showgrid="false"
      units="pt"
      inkscape:pagecheckerboard="true"
@@ -908,7 +908,7 @@
          inkscape:groupmode="layer"
          id="layer2"
          inkscape:label="Throwing Star"
-         style="display:inline">
+         style="display:none">
         <g
            id="g5005" />
         <g
@@ -932,7 +932,7 @@
          inkscape:groupmode="layer"
          id="layer16"
          inkscape:label="Bright Star"
-         style="display:none">
+         style="display:inline">
         <g
            id="g4976"
            transform="rotate(18.437234,206.39334,196.86877)">
