@@ -65,6 +65,7 @@ const screenshotRunner = async () => {
   await renderSVG({ width: 32, height: 32, inputFile: 'Ninja-Squirrel-Avatar.svg', outputFile: 'Ninja-Squirrel-32x32.png' })
   await renderSVG({ width: 1280, height: 1280, inputFile: 'Ninja-Squirrel-on-White.svg', outputFile: 'Ninja-Squirrel-on-White.png' })
   await renderSVG({ width: 1280, height: 1280, inputFile: 'BBC-Ninja-Squirrels.svg', outputFile: 'BBC-Ninja-Squirrels.png' })
+  await renderSVG({ width: 2560, height: 2560, inputFile: 'Ninja-Squirrel-TShirt-Design.svg', outputFile: 'Ninja-Squirrel-TShirt-Design.png' })
   await closeServer()
   killProcessAfter5Seconds()
 }
